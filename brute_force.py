@@ -26,11 +26,12 @@ def brute_force(number, largest_number):
 
         if i == number:
             # print new line
-            print()
-            print("Brute force complete")
+            print("Brute force complete          ")
             print("The number is: " + str(i))
             end = time.time()
-            print("Time taken: " + str(end - start))
+            # print time in milliseconds
+            print("Time taken: " + str(round((end - start) * 1000, 5)) + "ms")
+
             break
 
 
